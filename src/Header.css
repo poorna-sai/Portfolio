@@ -1,0 +1,120 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    
+ }  
+.Header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    position: fixed;
+    z-index: 1;
+   /* background-color: rgb(6, 6, 21,1); */
+    background-image: url('images/websitemain.jpg');
+    background-repeat: cover;
+    background-repeat: no-repeat;
+
+}
+.nav-container{
+    width: 50%;
+    display: flex;
+    z-index: 1;
+    
+   
+}
+.nav-container ul{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.title{
+    color:#fff;
+    display: flex;
+    padding: 10px 30px ;
+    font-size: 1.2rem;
+    
+}
+.nav-container ul li a{
+text-decoration-line: none;
+color:#fff;
+padding: 20px;
+font-size: 1.4rem;
+
+}
+.nav-container ul li{
+    transition: all 0.5s ease-in-out ;
+    position: static;
+}
+.nav-container ul li a:hover{
+   
+    /* background-color: rgb(0, 0, 0); */
+    color: yellow;
+    font-style:bold;
+    
+}
+   
+.open-menu , .close-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .Header{
+        height: 10vh;
+        
+    }
+    .open-menu{
+    display: block;
+    background-color: transparent;
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 40px;
+    
+    }
+    .close-menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        margin: 20px;
+        font-size: 1.3rem;
+        
+         
+    }
+    .nav-container{
+        
+        display: block;
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        width:50%;
+        overflow-x: hidden;
+        margin-right: -100%;
+        transition: 1.3s;
+       
+        
+    }
+
+    .nav-container ul{
+        top:10%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 50px;
+        
+    }
+    .nav-container ul li a{
+        color: #fff;
+    }
+    .nav-container ul li:hover{
+        background-color: none;
+        color: yellow;
+    }
+    
+   
+    
+  
+    
+}
+
